@@ -1,0 +1,19 @@
+{
+  "postCreateCommand": "npm i -g npm@latest && npm i -g node-red@4.1.0",
+  "forwardPorts": [1880],
+  "portsAttributes": {
+    "1880": {
+      "label": "Node-RED",
+      "visibility": "public"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 300,
+        "remote.autoForwardPorts": false
+      }
+    }
+  }
+}

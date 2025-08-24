@@ -1,0 +1,23 @@
+{
+  "name": "github-codespaces-node-red-class",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "refresh": "pkill -9 -f node-red 2>/dev/null || true; for p in 1880 3000 11434; do fuser -k ${p}/tcp 2>/dev/null || true; done",
+    "port-publish": "gh codespace ports visibility 1880:public -c $CODESPACE_NAME",
+    "node-red": "npm run port-publish && node-red --userDir .node-red -D editorTheme.tours=false -D editorTheme.projects.enabled=true -D editorTheme.projects.workflow.mode='auto' -D httpRequestTimeout=600000 -D notify.message='This environment will be terminated within 10 minutes. Please download your flow immediately.' -D notify.timer=13800000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/protoout-workspace/github-codespaces-node-red-class.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/protoout-workspace/github-codespaces-node-red-class/issues"
+  },
+  "homepage": "https://github.com/protoout-workspace/github-codespaces-node-red-class#readme"
+}
