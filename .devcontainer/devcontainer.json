@@ -1,5 +1,5 @@
 {
-  "postCreateCommand": "npm i -g npm@latest && npm i -g node-red@4.1.0",
+  "postCreateCommand": "npm i -g npm@latest && npm i -g node-red@5.0.4",
   "forwardPorts": [1880],
   "portsAttributes": {
     "1880": {
