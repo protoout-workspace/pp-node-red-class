@@ -4,7 +4,8 @@
   "portsAttributes": {
     "1880": {
       "label": "Node-RED",
-      "visibility": "public"
+      "visibility": "public",
+      "onAutoForward": "openBrowser"
     }
   },
   "customizations": {
